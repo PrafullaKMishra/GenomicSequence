@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Genomic Sequence
+What is delivered is a simple react based front-end with mock data with no back-end hookup. The users sees a table of metadata for uploaded genomic sequence, and has the ability to add a new genomic sequence. The the user can select an row, and edit meta data for that row.
+
+Search functionality is not yet implemented. The edit is designed to use the create component, but not completely hooked up.
+
+The back-end post apis would be designed to take a multi-part file, as well as a json with key value pairs for storing meta data.
+
+From infrastructure point view, something like amazon S3 would suffice for DNA file store, and for search performance, there are algorithms in the genomic space that need to be tried out. Parallelization, Caching, indexing techniques will also help scale the app.
+
+For mobile, most work needs to be done on serverside, giving only required infromation to the mobile front-end for display.
+
+
+
+
+
